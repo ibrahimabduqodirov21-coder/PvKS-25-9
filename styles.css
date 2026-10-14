@@ -1,99 +1,47 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  min-height: 100vh;
-  padding: 48px 16px;
-  font-family: "Verdana", sans-serif;
-  background-color: #fff8f0;
-  color: #222;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-h1 {
-  text-align: center;
-  font-size: 2.4rem;
-  margin-bottom: 36px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+.color-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
 }
 
-.pricing-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  max-width: 900px;
-  margin: 0 auto;
+.color-box {
+    width: 100px;
+    height: 100px;
+    min-width: 50px;
+    min-height: 50px;
 }
 
-.pricing-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 200px;
-  border: 2px solid black;
-  min-height: 320px;
-  padding: 24px 20px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 6px 6px 0 black;
-  text-align: center;
+/* 1. Hexadecimal color value */
+.color1 {
+    background-color: #3498db;
 }
 
-.basic-plan {
-  order: 0;
+/* 2. RGB color value */
+.color2 {
+    background-color: rgb(46, 204, 113);
 }
 
-.pro-plan {
-  order: 1;
-  flex-grow: 2;
-  background-color: #ffe066;
+/* 3. Predefined (word) color value */
+.color3 {
+    background-color: coral;
 }
 
-.premium-plan {
-  order: 2;
+/* 4. HSL color value */
+.color4 {
+    background-color: hsl(280, 60%, 60%);
 }
 
-.badge {
-  align-self: center;
-  padding: 4px 12px;
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background-color: black;
-  color: #ffe066;
-  border-radius: 999px;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-.pricing-card p {
-  font-size: 1.6rem;
-  font-weight: bold;
-}
-
-ul {
-  list-style: none;
-  line-height: 1.9;
-  font-size: 0.95rem;
-}
-
-button {
-  padding: 10px;
-  font: inherit;
-  font-weight: bold;
-  background-color: black;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #ff6b6b;
+/* 5. Custom background color */
+.color5 {
+    background-color: #e74c3c;
 }
